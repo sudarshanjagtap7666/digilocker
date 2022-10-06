@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title>digital locker</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="images/logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fas fa-times"onclick="hidemenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="upload.html">UPLOAD DOC</a></li>
+                    <li><a href="account.html">ACCOUNT</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>    
+            <i class="far fa-bars"onclick="showmenu()"></i>
+            </nav>
+            <h1>UPLOAD</h1>
+            <p>your file is ready to upload ?</p>
+<!-------upload btn-------->
+           
+                <form class="form">
+                    <div class="file-upload-wrapper" data-text="select your file!">
+                        <input name="file-upload-field" type="file" class="file-upload-field" value="">
+                    </div>
+                </form>
+                
+               
+    </section>
+ 
+    
+    <!-----footer---->
+    <section class="footer">
+        <h1>About us</h1>
+            <p>Developer = S.B.JAGTAP from kopargaon<br>Co-Developer = G.B.USARE from padhegaon</p>
+        <div class="icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fab fa-instagram"></i>
+        </div>
+        <p>Made with <i class="fa fa-heart-o"></i>by error Corporation</p>
+    </section>
+
+
+
+
+     <!------javascript for toggle menu------->
+    <script>
+       
+        function showmenu(){
+            navLinks.style.right="0";
+        }
+        function hidemenu(){
+            navLinks.style.right="-200px";
+        }
+    </script>
+     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+     <script src="main.js"></script>
+
+</body>
+</html>
